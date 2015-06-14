@@ -507,8 +507,16 @@ snippet radio Bootstrap
 	</div>
 	<div class="radio">
 	  <label>
-	    <input type="radio" name="${5:optionsRadios}" id="${6:optionsRadios2}" value="${7:option2}">
+	    <input type="radio" name="${1:optionsRadios}" id="${6:optionsRadios2}" value="${7:option2}">
 	    ${8:Option two can be something else and selecting it will deselect option one}
+	  </label>
+	</div>
+
+snippet radiosingle Bootstrap
+	<div class="radio">
+	  <label>
+	    <input type="radio" name="${1:optionsRadios}" id="${2:optionsRadios1}" value="${3:option1}" checked>
+	    ${4:Option one is this and that&mdash;be sure to include why it's great}
 	  </label>
 	</div>
 
@@ -670,11 +678,17 @@ snippet inputhelpblock Bootstrap
 	<input type="text" id="${2:inputHelpBlock}" class="form-control" aria-describedby="$3">
 	<span id="${3:helpBlock}" class="help-block">${4:A block of help text that breaks onto a new line and may extend beyond one line.}</span>
 
+snippet phelp Bootstrap
+	<p class="help-block">${1:A block of help text that breaks onto a new line and may extend beyond one line.}</p>
+
+snippet divhelp Bootstrap
+	<div class="help-block">${1:A block of help text that breaks onto a new line and may extend beyond one line.}</div>
+
 
 
 
 snippet btn Bootstrap
-	<button class="btn btn-default" type="submit">${1:Button}</button>
+	<button class="btn btn-${2:default}" type="submit">${1:Button}</button>
 
 snippet abtn Bootstrap
 	<a class="btn btn-default" href="${1:#}" role="button">${2:Link}</a>
