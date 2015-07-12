@@ -671,8 +671,15 @@ endsnippet
 
 snippet formgroup
 <div class="form-group">
+<label class="control-label" for="$2">${1:label}</label>
+<input type="text" class="form-control" id="${2:id}">
+</div>
+endsnippet
+
+snippet taformgroup
+<div class="form-group">
   <label class="control-label" for="$2">${1:label}</label>
-  <input type="text" class="form-control" id="${2:id}">
+  <textarea class="form-control${4}" rows="3" id="${2}">${3}</textarea>$0
 </div>
 endsnippet
 
