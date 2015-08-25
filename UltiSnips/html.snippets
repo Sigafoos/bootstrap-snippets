@@ -18,10 +18,14 @@ snippet basictemplate
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>${1}</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,12 +35,12 @@ snippet basictemplate
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    $0
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   </body>
 </html>
 endsnippet
@@ -171,55 +175,55 @@ snippet collgpull
 endsnippet
 
 snippet h1
-<h1>${1:Bootstrap heading}</h1>
+<h1>${1}</h1>$0
 endsnippet
 
 snippet h2
-<h2>${1:Bootstrap heading}</h2>
+<h2>${1}</h2>$0
 endsnippet
 
 snippet h3
-<h3>${1:Bootstrap heading}</h3>
+<h3>${1}</h3>$0
 endsnippet
 
 snippet h4
-<h4>${1:Bootstrap heading}</h4>
+<h4>${1}</h4>$0
 endsnippet
 
 snippet h5
-<h5>${1:Bootstrap heading}</h5>
+<h5>${1}</h5>$0
 endsnippet
 
 snippet h6
-<h6>${1:Bootstrap heading}</h6>
+<h6>${1}</h6>$0
 endsnippet
 
 snippet h1small
-<h1>${1:Bootstrap heading} <small>${2:Secondary text}</small></h1>
+<h1>${1} <small>${2}</small></h1>$0
 endsnippet
 
 snippet h2small
-<h2>${1:Bootstrap heading} <small>${2:Secondary text}</small></h2>
+<h2>${1} <small>${2}</small></h2>$0
 endsnippet
 
 snippet h3small
-<h3>${1:Bootstrap heading} <small>${2:Secondary text}</small></h3>
+<h3>${1} <small>${2}</small></h3>$0
 endsnippet
 
 snippet h4small
-<h4>${1:Bootstrap heading} <small>${2:Secondary text}</small></h4>
+<h4>${1} <small>${2}</small></h4>$0
 endsnippet
 
 snippet h5small
-<h5>${1:Bootstrap heading} <small>${2:Secondary text}</small></h5>
+<h5>${1} <small>${2}</small></h5>$0
 endsnippet
 
 snippet h6small
-<h6>${1:Bootstrap heading} <small>${2:Secondary text}</small></h6>
+<h6>${1} <small>${2}</small></h6>$0
 endsnippet
 
 snippet p
-<p>${1}</p>
+<p>${1}</p>$0
 endsnippet
 
 snippet lead
@@ -251,11 +255,11 @@ snippet small
 endsnippet
 
 snippet strong
-<strong>${1:bold text}</strong>
+<strong>${1}</strong>$0
 endsnippet
 
 snippet em
-<em>${1:italicized text}</em>
+<em>${1}</em>$0
 endsnippet
 
 snippet textleft
@@ -314,8 +318,8 @@ endsnippet
 
 snippet blockquote
 <blockquote>
-  <p>${1:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.}</p>
-</blockquote>
+  <p>${1}</p>${2}
+</blockquote>$0
 endsnippet
 
 snippet blockquotesource
@@ -333,26 +337,26 @@ endsnippet
 
 snippet ul
 <ul>
-  <li>${1}</li>
-</ul>
+  <li>${1}</li>${2}
+</ul>$0
 endsnippet
 
 snippet ol
 <ol>
-  <li>${1}</li>
-</ol>
+  <li>${1}</li>${2}
+</ol>$0
 endsnippet
 
 snippet listunstyled
 <ul class="list-unstyled">
-  <li>${1}</li>
-</ul>
+  <li>${1}</li>${2}
+</ul>$0
 endsnippet
 
 snippet listinline
 <ul class="list-inline">
-  <li>${1}</li>
-</ul>
+  <li>${1}</li>${2}
+</ul>$0
 endsnippet
 
 snippet dl
@@ -392,91 +396,101 @@ endsnippet
 snippet table
 <table class="table">
   ${1}
-</table>
+</table>$0
 endsnippet
 
 snippet tablestriped
 <table class="table table-striped">
   ${1}
-</table>
+</table>$0
 endsnippet
 
 snippet tablebordered
 <table class="table table-bordered">
   ${1}
-</table>
+</table>$0
 endsnippet
 
 snippet tablehover
 <table class="table table-hover">
   ${1}
-</table>
+</table>$0
 endsnippet
 
 snippet tablecondensed
 <table class="table table-condensed">
   ${1}
-</table>
+</table>$0
 endsnippet
 
 snippet tractive
-<tr class="active">${1}</tr>
+<tr class="active">
+  ${1}
+</tr>$0
 endsnippet
 
 snippet trsuccess
-<tr class="success">${1}</tr>
+<tr class="success">
+  ${1}
+</tr>$0
 endsnippet
 
 snippet trwarning
-<tr class="warning">${1}</tr>
+<tr class="warning">
+  ${1}
+</tr>$0
 endsnippet
 
 snippet trdanger
-<tr class="danger">${1}</tr>
+<tr class="danger">
+  ${1}
+</tr>$0
 endsnippet
 
 snippet trinfo
-<tr class="info">${1}</tr>
+<tr class="info">
+  ${1}
+</tr>$0
 endsnippet
 
 snippet tdactive
-<td class="active">${1}</td>
+<td class="active">${1}</td>$0
 endsnippet
 
 snippet tdsuccess
-<td class="success">${1}</td>
+<td class="success">${1}</td>$0
 endsnippet
 
 snippet tdwarning
-<td class="warning">${1}</td>
+<td class="warning">${1}</td>$0
 endsnippet
 
 snippet tddanger
-<td class="danger">${1}</td>
+<td class="danger">${1}</td>$0
 endsnippet
 
 snippet tdinfo
-<td class="info">${1}</td>
+<td class="info">${1}</td>$0
 endsnippet
 
 snippet thactive
-<th class="active">${1}</th>
+<th class="active">${1}</th>$0
 endsnippet
 
 snippet thsuccess
-<th class="success">${1}</th>
+<th class="success">${1}</th>$0
 endsnippet
 
 snippet thwarning
-<th class="warning">${1}</th>
+<th class="warning">${1}</th>$0
 endsnippet
 
 snippet thdanger
-<th class="danger">${1}</th>
+<th class="danger">${1}</th>$0
 endsnippet
 
 snippet thinfo
-<th class="info">${1}</th>
+<th class="info">${1}</th>$0
 endsnippet
 
 snippet tableresponsive
@@ -488,77 +502,21 @@ snippet tableresponsive
 endsnippet
 
 snippet form
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputFile">File input</label>
-    <input type="file" id="exampleInputFile">
-    <p class="help-block">Example block-level help text here.</p>
-  </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> Check me out
-    </label>
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+<form${1}>
+  ${2}
+</form>$0
 endsnippet
 
 snippet forminline
-<form class="form-inline">
-  <div class="form-group">
-    <label class="sr-only" for="exampleInputEmail3">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email">
-  </div>
-  <div class="form-group">
-    <label class="sr-only" for="exampleInputPassword3">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
-  </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> Remember me
-    </label>
-  </div>
-  <button type="submit" class="btn btn-default">Sign in</button>
-</form>
+<form class="form-inline${1}">
+  ${2}
+</form>$0
 endsnippet
 
 snippet formhorizontal
-<form class="form-horizontal">
-  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> Remember me
-        </label>
-      </div>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default">Sign in</button>
-    </div>
-  </div>
-</form>
+<form class="form-horizontal${1}">
+  ${2}
+</form>$0
 endsnippet
 
 snippet input
@@ -619,16 +577,14 @@ endsnippet
 
 snippet select
 <select class="form-control">
-  <option>${1:1}</option>
-  <option>${2:2}</option>
-</select>
+  <option>${1}</option>${2}
+</select>$0
 endsnippet
 
 snippet selectmultiple
 <select multiple class="form-control">
-  <option>${1:1}</option>
-  <option>${2:2}</option>
-</select>
+  <option>${1}</option>${2}
+</select>$0
 endsnippet
 
 snippet formcontrolstatic
@@ -669,14 +625,20 @@ snippet inputreadonly
 <input class="form-control" type="text" placeholder="${1:Readonly input here...}" readonly>
 endsnippet
 
-snippet formgroup
+snippet formgroup "empty formgroup"
 <div class="form-group">
-<label class="control-label" for="$2">${1:label}</label>
-<input type="text" class="form-control" id="${2:id}">
-</div>
+  ${1}
+</div>$0
 endsnippet
 
-snippet taformgroup
+snippet iformgroup "input formgroup"
+<div class="form-group">
+  <label class="control-label" for="$2">${1}</label>
+  <input type="${3:text}" class="form-control" id="${2}">${4}
+</div>$0
+endsnippet
+
+snippet taformgroup "textarea formgroup"
 <div class="form-group">
   <label class="control-label" for="$2">${1:label}</label>
   <textarea class="form-control${4}" rows="3" id="${2}">${3}</textarea>$0
@@ -798,7 +760,7 @@ snippet divhelp
 endsnippet
 
 snippet btn
-<button class="btn btn-${2:default}" type="submit">${1:Button}</button>
+<button class="btn btn-${2:default}">${1}</button>$0
 endsnippet
 
 snippet abtn
@@ -809,8 +771,8 @@ snippet inputbtn
 <input class="btn btn-default" type="button" value="${1:Input}">
 endsnippet
 
-snippet submitbtn
-<input class="btn btn-default" type="submit" value="${1:Submit}">
+snippet btnsubmit
+<input class="btn btn-${1:default}" type="submit" value="${2:Submit}">$0
 endsnippet
 
 snippet btndefault
